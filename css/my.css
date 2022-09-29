@@ -1,0 +1,59 @@
+::-webkit-scrollbar{
+    display: none;
+  }
+
+#startAni{
+    position: fixed;
+    z-index: 9999999;
+    margin:auto;
+    
+}
+#startAni>svg{
+    width: 40px;
+    height: 40px;
+}
+h{
+    font-family:"Microsoft YaHei";
+}
+body{
+    margin: 0px 0px; padding: 0px 0px;
+    font-family:"Microsoft YaHei";
+}
+#header{
+    height:100px;
+}
+nav{
+    z-index: 99999;
+}
+#container{
+    margin-bottom: 100px;
+}
+#myInfo{
+    position: relative;
+}
+#myAvatar{
+    margin:0 auto;
+    height:10em;
+    width:10em;
+    overflow: hidden;
+}
+#name{
+    font-size: large;
+    font-family:"Microsoft YaHei";
+}
+#content{
+    margin:0;
+}
+.Info{
+    margin:0 auto;
+    
+}
+a{
+    color:black;
+}
+li{
+    margin-bottom:1%;
+}
+.friendCircleImg{
+    overflow-y: auto;
+}
