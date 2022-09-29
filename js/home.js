@@ -15,7 +15,7 @@ function sleep(delay) {
 }
 
 function endAnimation(){
-    window.location.href="/html/home.html";
+    window.location.href="html/home.html";
 }
 
 function counter(){
