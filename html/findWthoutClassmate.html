@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap引用 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Zhiwei Chen</title>
+    <style>
+        html,body{
+            height:100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="jumbotron text-center h-100">
+        <div class="container h-100">
+          <h1 class="m-4">没接龙的人</h1>
+          <textarea id="input" class="form-control h-50 mb-3" aria-label="With textarea">
+
+          </textarea>
+          <button class="btn btn-primary my-2 w-100 h-10 mb-3" onclick="
+            var s=$('#input').val();
+            var outs=''
+            console.log(String(s));
+            var names=['翟浩州', '龚秦康', '陆璐', '宋铠玉', '王傲明', '王世祺', '袁旭杰', '赵文博', '晏祺龙', '付一愉', '郭秋彤', '郭毅', '姜永军', '江浩维', '李帅霖', '刘峰', '罗慧琪', '涂凯飞', '袁文皓', '张宇锋', '周斐毓', '何荣海', '陈志伟', '孙鸿涛', '钟梓玮', '陈志嘉', '于璐', '张瀚', '刘思思', '陈星延', '武子贤', '陈育枫', '陈泽周', '王强', '罗淦元', '庞联雨', '罗涵', '蒋政', '刘宇轩', '李浩'];
+            for(i=0;i<=39;i++){
+                if (!s.includes(names[i])){
+                    outs+=names[i]+' '
+                }
+            }
+            $('#output').text(String(outs));
+            ">
+            FIND
+        </button>
+            <textarea id="output" class="form-control h-25" aria-label="With textarea"></textarea>
+        </div>
+      </section>
+    
+</body>
+</html>
